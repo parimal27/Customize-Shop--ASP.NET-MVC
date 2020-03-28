@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Name="CartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uid" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="pname" Type="varchar" MaxLength="50" />
+    <Property Name="price" Type="int" />
+    <Property Name="qty" Type="int" />
+    <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+    <Property Name="spid1" Type="int" />
+    <Property Name="spid2" Type="int" />
+    <Property Name="image" Type="varchar" MaxLength="50" />
+    <Property Name="date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Delivery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uid" Type="varchar" MaxLength="50" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="address" Type="varchar" MaxLength="50" />
+    <Property Name="pname" Type="varchar" MaxLength="50" />
+    <Property Name="price" Type="varchar" MaxLength="50" />
+    <Property Name="qty" Type="int" />
+    <Property Name="date" Type="datetime" />
+    <Property Name="mobile" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+    <Property Name="cate" Type="varchar" MaxLength="50" />
+    <Property Name="mno" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Part">
+    <Key>
+      <PropertyRef Name="partID" />
+    </Key>
+    <Property Name="partID" Type="int" Nullable="false" />
+    <Property Name="pid" Type="int" Nullable="false" />
+    <Property Name="desc" Type="varchar" MaxLength="50" />
+    <Property Name="image" Type="varchar" MaxLength="50" />
+    <Property Name="price" Type="int" />
+    <Property Name="cate" Type="varchar" MaxLength="50" />
+    <Property Name="noparts" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="PId" />
+    </Key>
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="pname" Type="varchar" MaxLength="50" />
+    <Property Name="pdsc" Type="varchar" MaxLength="50" />
+    <Property Name="pqty" Type="int" />
+    <Property Name="pimage" Type="varchar" MaxLength="50" />
+    <Property Name="pcate" Type="int" />
+    <Property Name="price" Type="int" />
+  </EntityType>
+  <EntityType Name="ProductPartMap">
+    <Key>
+      <PropertyRef Name="ppId" />
+    </Key>
+    <Property Name="ppId" Type="int" Nullable="false" />
+    <Property Name="partid1" Type="int" />
+    <Property Name="partid2" Type="int" />
+    <Property Name="image" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__Part__pid__286302EC">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Part" Type="Self.Part" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="Part">
+        <PropertyRef Name="pid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductPa__parti__2B3F6F97">
+    <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+    <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Part">
+        <PropertyRef Name="partID" />
+      </Principal>
+      <Dependent Role="ProductPartMap">
+        <PropertyRef Name="partid1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductPa__parti__2C3393D0">
+    <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+    <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Part">
+        <PropertyRef Name="partID" />
+      </Principal>
+      <Dependent Role="ProductPartMap">
+        <PropertyRef Name="partid2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Database1ModelStoreContainer">
+    <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Delivery" EntityType="Self.Delivery" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Part" EntityType="Self.Part" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductPartMap" EntityType="Self.ProductPartMap" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Part__pid__286302EC" Association="Self.FK__Part__pid__286302EC">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Part" EntitySet="Part" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductPa__parti__2B3F6F97" Association="Self.FK__ProductPa__parti__2B3F6F97">
+      <End Role="Part" EntitySet="Part" />
+      <End Role="ProductPartMap" EntitySet="ProductPartMap" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductPa__parti__2C3393D0" Association="Self.FK__ProductPa__parti__2C3393D0">
+      <End Role="Part" EntitySet="Part" />
+      <End Role="ProductPartMap" EntitySet="ProductPartMap" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

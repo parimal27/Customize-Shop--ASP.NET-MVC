@@ -1,0 +1,74 @@
+﻿@model CShop.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="padding-top:15%;" class="container">
+    <h2>Details</h2>
+
+    <div>
+        <h4>Product</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.pname)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pname)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.pdsc)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pdsc)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.pqty)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pqty)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.pimage)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pimage)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.pcate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.pcate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.price)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.price)
+            </dd>
+
+        </dl>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<script>
+    $(document).ready(function () {
+
+        $("#disp").css('display','none');
+    });
+</script>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="DMODEL1">
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="Database1Model.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+          <ScalarProperty Name="spid1" ColumnName="spid1" />
+          <ScalarProperty Name="spid2" ColumnName="spid2" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parts">
+      <EntityTypeMapping TypeName="Database1Model.Part">
+        <MappingFragment StoreEntitySet="Part">
+          <ScalarProperty Name="partID" ColumnName="partID" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="cate" ColumnName="cate" />
+          <ScalarProperty Name="noparts" ColumnName="noparts" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="Database1Model.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="pdsc" ColumnName="pdsc" />
+          <ScalarProperty Name="pqty" ColumnName="pqty" />
+          <ScalarProperty Name="pimage" ColumnName="pimage" />
+          <ScalarProperty Name="pcate" ColumnName="pcate" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductPartMaps">
+      <EntityTypeMapping TypeName="Database1Model.ProductPartMap">
+        <MappingFragment StoreEntitySet="ProductPartMap">
+          <ScalarProperty Name="ppId" ColumnName="ppId" />
+          <ScalarProperty Name="partid1" ColumnName="partid1" />
+          <ScalarProperty Name="partid2" ColumnName="partid2" />
+          <ScalarProperty Name="image" ColumnName="image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deliveries">
+      <EntityTypeMapping TypeName="Database1Model.Delivery">
+        <MappingFragment StoreEntitySet="Delivery">
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="Database1Model.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="mno" ColumnName="mno" />
+          <ScalarProperty Name="cate" ColumnName="cate" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

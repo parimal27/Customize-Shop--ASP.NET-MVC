@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Database1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cart">
+          <Key>
+            <PropertyRef Name="CartID" />
+          </Key>
+          <Property Name="CartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uid" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="pname" Type="varchar" MaxLength="50" />
+          <Property Name="price" Type="int" />
+          <Property Name="qty" Type="int" />
+          <Property Name="timestamp" Type="timestamp" StoreGeneratedPattern="Computed" />
+          <Property Name="spid1" Type="int" />
+          <Property Name="spid2" Type="int" />
+          <Property Name="image" Type="varchar" MaxLength="50" />
+          <Property Name="date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Part">
+          <Key>
+            <PropertyRef Name="partID" />
+          </Key>
+          <Property Name="partID" Type="int" Nullable="false" />
+          <Property Name="pid" Type="int" Nullable="false" />
+          <Property Name="desc" Type="varchar" MaxLength="50" />
+          <Property Name="image" Type="varchar" MaxLength="50" />
+          <Property Name="price" Type="int" />
+          <Property Name="cate" Type="varchar" MaxLength="50" />
+          <Property Name="noparts" Type="int" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="PId" />
+          </Key>
+          <Property Name="PId" Type="int" Nullable="false" />
+          <Property Name="pname" Type="varchar" MaxLength="50" />
+          <Property Name="pdsc" Type="varchar" MaxLength="50" />
+          <Property Name="pqty" Type="int" />
+          <Property Name="pimage" Type="varchar" MaxLength="50" />
+          <Property Name="pcate" Type="int" />
+          <Property Name="price" Type="int" />
+        </EntityType>
+        <EntityType Name="ProductPartMap">
+          <Key>
+            <PropertyRef Name="ppId" />
+          </Key>
+          <Property Name="ppId" Type="int" Nullable="false" />
+          <Property Name="partid1" Type="int" />
+          <Property Name="partid2" Type="int" />
+          <Property Name="image" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__Part__pid__286302EC">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Part" Type="Self.Part" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="PId" />
+            </Principal>
+            <Dependent Role="Part">
+              <PropertyRef Name="pid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ProductPa__parti__2B3F6F97">
+          <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+          <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Part">
+              <PropertyRef Name="partID" />
+            </Principal>
+            <Dependent Role="ProductPartMap">
+              <PropertyRef Name="partid1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ProductPa__parti__2C3393D0">
+          <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+          <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Part">
+              <PropertyRef Name="partID" />
+            </Principal>
+            <Dependent Role="ProductPartMap">
+              <PropertyRef Name="partid2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Database1ModelStoreContainer">
+          <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Part" EntityType="Self.Part" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProductPartMap" EntityType="Self.ProductPartMap" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Part__pid__286302EC" Association="Self.FK__Part__pid__286302EC">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Part" EntitySet="Part" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ProductPa__parti__2B3F6F97" Association="Self.FK__ProductPa__parti__2B3F6F97">
+            <End Role="Part" EntitySet="Part" />
+            <End Role="ProductPartMap" EntitySet="ProductPartMap" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ProductPa__parti__2C3393D0" Association="Self.FK__ProductPa__parti__2C3393D0">
+            <End Role="Part" EntitySet="Part" />
+            <End Role="ProductPartMap" EntitySet="ProductPartMap" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cart">
+          <Key>
+            <PropertyRef Name="CartID" />
+          </Key>
+          <Property Name="CartID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="pname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="qty" Type="Int32" />
+          <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="spid1" Type="Int32" />
+          <Property Name="spid2" Type="Int32" />
+          <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Part">
+          <Key>
+            <PropertyRef Name="partID" />
+          </Key>
+          <Property Name="partID" Type="Int32" Nullable="false" />
+          <Property Name="pid" Type="Int32" Nullable="false" />
+          <Property Name="desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="cate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="noparts" Type="Int32" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK__Part__pid__286302EC" FromRole="Part" ToRole="Product" />
+          <NavigationProperty Name="ProductPartMaps" Relationship="Self.FK__ProductPa__parti__2B3F6F97" FromRole="Part" ToRole="ProductPartMap" />
+          <NavigationProperty Name="ProductPartMaps1" Relationship="Self.FK__ProductPa__parti__2C3393D0" FromRole="Part" ToRole="ProductPartMap" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="PId" />
+          </Key>
+          <Property Name="PId" Type="Int32" Nullable="false" />
+          <Property Name="pname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pdsc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pqty" Type="Int32" />
+          <Property Name="pimage" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="pcate" Type="Int32" />
+          <Property Name="price" Type="Int32" />
+          <NavigationProperty Name="Parts" Relationship="Self.FK__Part__pid__286302EC" FromRole="Product" ToRole="Part" />
+        </EntityType>
+        <EntityType Name="ProductPartMap">
+          <Key>
+            <PropertyRef Name="ppId" />
+          </Key>
+          <Property Name="ppId" Type="Int32" Nullable="false" />
+          <Property Name="partid1" Type="Int32" />
+          <Property Name="partid2" Type="Int32" />
+          <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Part" Relationship="Self.FK__ProductPa__parti__2B3F6F97" FromRole="ProductPartMap" ToRole="Part" />
+          <NavigationProperty Name="Part1" Relationship="Self.FK__ProductPa__parti__2C3393D0" FromRole="ProductPartMap" ToRole="Part" />
+        </EntityType>
+        <Association Name="FK__Part__pid__286302EC">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Part" Type="Self.Part" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="PId" />
+            </Principal>
+            <Dependent Role="Part">
+              <PropertyRef Name="pid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ProductPa__parti__2B3F6F97">
+          <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+          <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Part">
+              <PropertyRef Name="partID" />
+            </Principal>
+            <Dependent Role="ProductPartMap">
+              <PropertyRef Name="partid1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ProductPa__parti__2C3393D0">
+          <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+          <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Part">
+              <PropertyRef Name="partID" />
+            </Principal>
+            <Dependent Role="ProductPartMap">
+              <PropertyRef Name="partid2" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Carts" EntityType="Self.Cart" />
+          <EntitySet Name="Parts" EntityType="Self.Part" />
+          <EntitySet Name="Products" EntityType="Self.Product" />
+          <EntitySet Name="ProductPartMaps" EntityType="Self.ProductPartMap" />
+          <AssociationSet Name="FK__Part__pid__286302EC" Association="Self.FK__Part__pid__286302EC">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Part" EntitySet="Parts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ProductPa__parti__2B3F6F97" Association="Self.FK__ProductPa__parti__2B3F6F97">
+            <End Role="Part" EntitySet="Parts" />
+            <End Role="ProductPartMap" EntitySet="ProductPartMaps" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ProductPa__parti__2C3393D0" Association="Self.FK__ProductPa__parti__2C3393D0">
+            <End Role="Part" EntitySet="Parts" />
+            <End Role="ProductPartMap" EntitySet="ProductPartMaps" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities">
+          <EntitySetMapping Name="Carts">
+            <EntityTypeMapping TypeName="Database1Model.Cart">
+              <MappingFragment StoreEntitySet="Cart">
+                <ScalarProperty Name="CartID" ColumnName="CartID" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="pname" ColumnName="pname" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="qty" ColumnName="qty" />
+                <ScalarProperty Name="timestamp" ColumnName="timestamp" />
+                <ScalarProperty Name="spid1" ColumnName="spid1" />
+                <ScalarProperty Name="spid2" ColumnName="spid2" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="date" ColumnName="date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parts">
+            <EntityTypeMapping TypeName="Database1Model.Part">
+              <MappingFragment StoreEntitySet="Part">
+                <ScalarProperty Name="partID" ColumnName="partID" />
+                <ScalarProperty Name="pid" ColumnName="pid" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="cate" ColumnName="cate" />
+                <ScalarProperty Name="noparts" ColumnName="noparts" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="Database1Model.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="PId" ColumnName="PId" />
+                <ScalarProperty Name="pname" ColumnName="pname" />
+                <ScalarProperty Name="pdsc" ColumnName="pdsc" />
+                <ScalarProperty Name="pqty" ColumnName="pqty" />
+                <ScalarProperty Name="pimage" ColumnName="pimage" />
+                <ScalarProperty Name="pcate" ColumnName="pcate" />
+                <ScalarProperty Name="price" ColumnName="price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductPartMaps">
+            <EntityTypeMapping TypeName="Database1Model.ProductPartMap">
+              <MappingFragment StoreEntitySet="ProductPartMap">
+                <ScalarProperty Name="ppId" ColumnName="ppId" />
+                <ScalarProperty Name="partid1" ColumnName="partid1" />
+                <ScalarProperty Name="partid2" ColumnName="partid2" />
+                <ScalarProperty Name="image" ColumnName="image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

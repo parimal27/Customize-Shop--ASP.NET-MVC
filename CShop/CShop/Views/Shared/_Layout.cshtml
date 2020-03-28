@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+   
+      <link href="//fonts.googleapis.com/css?family=Sunflower:500,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+</head>
+<body>
+ 
+     <div class="header-bar">
+        
+        <div class="container-fluid">
+            <div class="hedder-up row">
+                <div class="col-lg-3 col-md-3 logo-head">
+                    <h1><a class="navbar-brand" href='@Url.Action("Index")'>Customize Shop</a></h1>
+                </div>
+
+                
+                <div class="col-lg-5 col-md-6 search-right">
+                    <form class="form-inline my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" id="search">
+                     
+                        
+                    </form>
+                    <div id="result" style="overflow:scroll;display:none;height:100px;background:grey;color:black">
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 right-side-cart">
+                    <div class="cart-icons">
+                        <ul>
+                            <li>
+                                @if (Session["email"]==null)
+                                {
+                                    <button type="button" data-toggle="modal" data-target="#exampleModal" id="loginclick"> <span class="far fa-user"></span></button>
+                                }
+                                else
+                                {
+
+                                    <script>
+                                       function clicklog() {
+                                            window.location.href = "/Shop/Logout";
+                                        }
+                                  
+                                    </script>
+                                    <a onclick="clicklog()"> <span class="far fa-user"></span></a>
+
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <nav class="navbar navbar-expand-lg navbar-light" style="background:#ea1d5d;" id="disp">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Index">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Cart" class="nav-link">Cart</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="Product" class="nav-link">Shop Now</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Account
+                        </a>@if (Session["email"] == null)
+                        { <text>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link" data-toggle="modal" data-target="#exampleModal1">Sign Up</a>
+                            <a class="nav-link " data-toggle="modal" data-target="#exampleModal">Login</a>
+                        </div></text>}else
+                        {
+                            <text>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link"  href='@Url.Action("Logout")'>(@Session["email"])Logout</a>
+                        </div>
+                            </text>
+}
+</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Product
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!---<a class="nav-link" href="product.html">Kids Toys</a>-->
+                            @Html.ActionLink("Watchs", "Product", "Shop",new { pcate=1},new { @class="nav-link"})
+                            @Html.ActionLink("Spectacles", "Product", "Shop", new { pcate = 2 }, new { @class = "nav-link" })
+                            @Html.ActionLink("Jeans", "Product", "Shop", new { pcate = 3}, new { @class = "nav-link" })
+                            @Html.ActionLink("T-Shirts", "Product", "Shop", new { pcate = 4 }, new { @class = "nav-link" })                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!---
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                ---Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { ---class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>---Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>---Html.ActionLink("About", "About", "Home")</li>
+                    <li>---Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                ---Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        ---RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; ---DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+        -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @RenderBody()
+
+</body>
+</html>

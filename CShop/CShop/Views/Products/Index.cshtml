@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CShop.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<div style="min-height:150px;"></div>
+<p>
+   
+</p>
+<div class="container">
+  
+        <a href='@Url.Action("Create")' style="color:white;padding:15px;background:black;">Create New Product</a>
+<table class="table  table-striped" style="margin-top:1%;">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.pname)
+        </th>
+        <th>
+
+           @Html.DisplayNameFor(model => model.pimage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pcate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.pname)
+        </td>
+        <td>
+            <img src='~/Content/image1/@Html.DisplayFor(modelItem => item.pimage)' style="width:200px;height:200px;"/>
+ </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pcate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PId },new { @style="color:black;"}) |
+            @Html.ActionLink("Details", "Details", new { id=item.PId }, new { @style = "color:black;" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PId },  new { @style = "color:black;" })
+        </td>
+    </tr>
+}
+
+</table>
+    </div>  
+
+<script>
+    $(document).ready(function () {
+
+        $("#disp").css('display','none');
+    });
+</script>

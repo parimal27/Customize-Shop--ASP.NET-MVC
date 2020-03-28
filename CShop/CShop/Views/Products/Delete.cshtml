@@ -1,0 +1,81 @@
+﻿@model CShop.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div style="padding-top:15%;" class="container">
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.pname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pdsc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pdsc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pqty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pqty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pimage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pimage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pcate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pcate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+    </div>
+
+<script>
+    $(document).ready(function () {
+
+        $("#disp").css('display','none');
+    });
+</script>

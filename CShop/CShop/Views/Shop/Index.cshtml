@@ -1,0 +1,206 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="slider text-center">
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider4">
+            <li>
+                <div class="slider-img one-img">
+                    <div class="container">
+                        <div class="slider-info ">
+                            <h5 style="color:#ea1d5d;">If You Can't Stop Thinking About It...<br />Buy It.</h5>
+                            <div class="bottom-info">
+                                <p></p>
+                            </div>
+                            <div class="outs_more-buttn">
+                                <a href='@Url.Action("Product")'>Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slider-img two-img">
+                    <div class="container">
+                        <div class="slider-info ">
+                            <h5>Sort Toys And Teddy bears<br>For Kids</h5>
+                            <div class="bottom-info">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                            </div>
+                            <div class="outs_more-buttn">
+                                <a href="about.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slider-img three-img">
+                    <div class="container">
+                        <div class="slider-info">
+                            <h5>Best Toys And Dolls<br> For Kids</h5>
+                            <div class="bottom-info">
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                            </div>
+                            <div class="outs_more-buttn">
+                                <a href="about.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- This is here just to demonstrate the callbacks -->
+    <!-- <ul class="events">
+       <li>Example 4 callback events</li>
+       </ul>-->
+
+    <div class="clearfix"></div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $("#loginbuttonclick").click(function () {
+                        if ($("#emaill").val() == '' || $("#passwordl").val() == '') {
+                            alert("Please Enter Credentials..");
+                        } else {
+                            $.post('@Url.Action("Login")', { email: $("#emaill").val(), password: $("#passwordl").val() }, function (data, err) {
+                                if (jQuery.parseJSON(data).valid == "Shop/Index") {
+
+                                    window.location.href = "/Shop/Index";
+                                }
+                                else if (jQuery.parseJSON(data).valid == "Products/Index") {
+
+                                    window.location.href = "/Products/Index";
+                                }
+                                else
+                                    alert(jQuery.parseJSON(data).valid);
+                            });
+                        } });
+
+
+                });
+            </script>
+            <div class="modal-body">
+                <div class="register-form">
+                    <form onsubmit="checklogin()" method="post">
+                        <div class="fields-grid">
+                            <div class="styled-input">
+                                <input type="email"  id="emaill" placeholder="Your Email" name="email" required="">
+                            </div>
+                            <div class="styled-input">
+                                <input type="password"  id="passwordl" placeholder="password" name="password" required="">
+                            </div>
+                            <button id="loginbuttonclick" type="button" class="btn subscrib-btnn">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <script>
+                $(document).ready(function () {
+                   
+                    $("#regbuttonclick").click(function () {
+                        if ($("#emailr").val() == '' || $("#passwordr").val() == '' || $("#namer").val() == '' || $("#mnor").val() == '') {
+                            alert("Please Fill Up Details..");
+                        }
+                        else {
+                            if ($("#passwordr").val() == $("#passwordr1").val()) {
+
+                                $.post('@Url.Action("Register")', { email: $("#emailr").val(), password: $("#passwordr").val(), name: $("#namer").val(), mno: $("#mnor").val() }, function (data, err) {
+                                    if (jQuery.parseJSON(data).valid == "Shop/Index") {
+                                        alert("you are Registerd..");
+                                        window.location.href = "/Shop/Index";
+                                    } else
+                                        alert(jQuery.parseJSON(data).valid);
+
+                                });
+                            }
+                            else
+                                alert("Password and Cofirm Password not metch");
+                        }    });
+
+                    
+                });
+            </script>
+            <div class="modal-body">
+                <div class="register-form">
+                    <form onsubmit="reg()" method="post">
+                        <div class="fields-grid">
+                            <div class="styled-input">
+                                <input type="text" id="namer" placeholder="Your Name" name="email" required="">
+                            </div>
+                            <div class="styled-input">
+                                <input type="text" id="mnor" placeholder="Your Mobile" name="email" required="">
+                            </div>
+
+                             <div class="styled-input">
+                                <input type="email" id="emailr" placeholder="Your Email" name="email" required="">
+                            </div>
+                            <div class="styled-input">
+                                <input type="password" id="passwordr" placeholder="password" name="password" required="">
+                            </div>
+                            <div class="styled-input">
+                                <input type="password" id="passwordr1" placeholder="Confirm password" name="password" required="">
+                            </div>
+
+                            <button id="regbuttonclick" type="button" class="btn subscrib-btnn">SignUp</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+                    $(document).ready(function (){
+                       
+                        $("#search").keypress(function () {
+                           
+                            $.post('@Url.Action("Search")', {search:$("#search").val() },function (data) {
+                                
+                                $("#result").css("display", "block");
+                                $("#result a").css("color", "grey");
+                                $("#result").html(jQuery.parseJSON(data).name);
+
+                            });
+                        });
+
+                    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $("#loginclick").click(function () {
+
+            $("#navbarSupportedContent").css("margin", "0px");
+        });
+    });
+</script>

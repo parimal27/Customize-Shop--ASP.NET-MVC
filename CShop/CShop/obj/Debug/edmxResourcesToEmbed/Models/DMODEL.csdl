@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Name="CartID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="qty" Type="Int32" />
+    <Property Name="timestamp" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="spid1" Type="Int32" />
+    <Property Name="spid2" Type="Int32" />
+    <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Part">
+    <Key>
+      <PropertyRef Name="partID" />
+    </Key>
+    <Property Name="partID" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="desc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Int32" />
+    <Property Name="cate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="noparts" Type="Int32" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Part__pid__286302EC" FromRole="Part" ToRole="Product" />
+    <NavigationProperty Name="ProductPartMaps" Relationship="Self.FK__ProductPa__parti__2B3F6F97" FromRole="Part" ToRole="ProductPartMap" />
+    <NavigationProperty Name="ProductPartMaps1" Relationship="Self.FK__ProductPa__parti__2C3393D0" FromRole="Part" ToRole="ProductPartMap" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="PId" />
+    </Key>
+    <Property Name="PId" Type="Int32" Nullable="false" />
+    <Property Name="pname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pdsc" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pqty" Type="Int32" />
+    <Property Name="pimage" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pcate" Type="Int32" />
+    <Property Name="price" Type="Int32" />
+    <NavigationProperty Name="Parts" Relationship="Self.FK__Part__pid__286302EC" FromRole="Product" ToRole="Part" />
+  </EntityType>
+  <EntityType Name="ProductPartMap">
+    <Key>
+      <PropertyRef Name="ppId" />
+    </Key>
+    <Property Name="ppId" Type="Int32" Nullable="false" />
+    <Property Name="partid1" Type="Int32" />
+    <Property Name="partid2" Type="Int32" />
+    <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Part" Relationship="Self.FK__ProductPa__parti__2B3F6F97" FromRole="ProductPartMap" ToRole="Part" />
+    <NavigationProperty Name="Part1" Relationship="Self.FK__ProductPa__parti__2C3393D0" FromRole="ProductPartMap" ToRole="Part" />
+  </EntityType>
+  <Association Name="FK__Part__pid__286302EC">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Part" Type="Self.Part" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="Part">
+        <PropertyRef Name="pid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductPa__parti__2B3F6F97">
+    <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+    <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Part">
+        <PropertyRef Name="partID" />
+      </Principal>
+      <Dependent Role="ProductPartMap">
+        <PropertyRef Name="partid1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductPa__parti__2C3393D0">
+    <End Role="Part" Type="Self.Part" Multiplicity="0..1" />
+    <End Role="ProductPartMap" Type="Self.ProductPartMap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Part">
+        <PropertyRef Name="partID" />
+      </Principal>
+      <Dependent Role="ProductPartMap">
+        <PropertyRef Name="partid2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DMODEL1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Carts" EntityType="Self.Cart" />
+    <EntitySet Name="Parts" EntityType="Self.Part" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductPartMaps" EntityType="Self.ProductPartMap" />
+    <AssociationSet Name="FK__Part__pid__286302EC" Association="Self.FK__Part__pid__286302EC">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Part" EntitySet="Parts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductPa__parti__2B3F6F97" Association="Self.FK__ProductPa__parti__2B3F6F97">
+      <End Role="Part" EntitySet="Parts" />
+      <End Role="ProductPartMap" EntitySet="ProductPartMaps" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductPa__parti__2C3393D0" Association="Self.FK__ProductPa__parti__2C3393D0">
+      <End Role="Part" EntitySet="Parts" />
+      <End Role="ProductPartMap" EntitySet="ProductPartMaps" />
+    </AssociationSet>
+    <EntitySet Name="Deliveries" EntityType="Database1Model.Delivery" />
+    <EntitySet Name="Logins" EntityType="Database1Model.Login" />
+  </EntityContainer>
+  <EntityType Name="Delivery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="qty" Type="Int32" />
+    <Property Name="date" Type="DateTime" Precision="3" />
+    <Property Name="mobile" Type="Int64" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="email" />
+    </Key>
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mno" Type="Int64" />
+  </EntityType>
+</Schema>

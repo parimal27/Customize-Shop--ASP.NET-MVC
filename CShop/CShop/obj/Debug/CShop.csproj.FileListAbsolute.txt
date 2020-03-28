@@ -1,0 +1,292 @@
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\csc.exe
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\System.Collections.Immutable.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\System.Reflection.Metadata.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\vbc.exe
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\VBCSCompiler.exe
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\roslyn\VBCSCompiler.exe.config
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\CShop.dll.config
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\CShop.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\CShop.pdb
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Antlr3.Runtime.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\EntityFramework.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\EntityFramework.SqlServer.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Google.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Web.Infrastructure.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Newtonsoft.Json.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Owin.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Helpers.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Mvc.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Optimization.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Razor.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.WebPages.Deployment.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.WebPages.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.WebPages.Razor.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\WebGrease.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Helpers.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Mvc.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Optimization.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.Razor.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.WebPages.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.WebPages.Deployment.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\System.Web.WebPages.Razor.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Antlr3.Runtime.pdb
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Newtonsoft.Json.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\EntityFramework.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\EntityFramework.SqlServer.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Google.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\obj\Debug\CShop.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\obj\Debug\CShop.pdb
+F:\btech sem5\wddn\project wddn\CShop\CShop\obj\Debug\CShop.csprojResolveAssemblyReference.cache
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Dapper.dll
+F:\btech sem5\wddn\project wddn\CShop\CShop\bin\Dapper.xml
+F:\btech sem5\wddn\project wddn\CShop\CShop\obj\Debug\CShop.Migrations.Cart.resources
+F:\btech sem5\wddn\project wddn\CShop\CShop\obj\Debug\CShop.csproj.GenerateResource.Cache
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\obj\Debug\CShop.csprojResolveAssemblyReference.cache
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\obj\Debug\CShop.Migrations.Cart.resources
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\obj\Debug\CShop.csproj.GenerateResource.Cache
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\obj\Debug\CShop.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\obj\Debug\CShop.pdb
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\csc.exe
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\System.Collections.Immutable.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\System.Reflection.Metadata.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\vbc.exe
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\VBCSCompiler.exe
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\roslyn\VBCSCompiler.exe.config
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\CShop.dll.config
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\CShop.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\CShop.pdb
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Antlr3.Runtime.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Dapper.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\EntityFramework.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\EntityFramework.SqlServer.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Google.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Web.Infrastructure.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Newtonsoft.Json.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Owin.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Helpers.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Mvc.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Optimization.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Razor.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.WebPages.Deployment.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.WebPages.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.WebPages.Razor.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\WebGrease.dll
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Dapper.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Helpers.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Mvc.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Optimization.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.Razor.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.WebPages.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.WebPages.Deployment.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\System.Web.WebPages.Razor.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Antlr3.Runtime.pdb
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Newtonsoft.Json.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\EntityFramework.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\EntityFramework.SqlServer.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Google.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.xml
+F:\btech sem5\wddn\project wddn\New folder\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\csc.exe
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\System.Collections.Immutable.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\System.Reflection.Metadata.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\vbc.exe
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\VBCSCompiler.exe
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\roslyn\VBCSCompiler.exe.config
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\CShop.dll.config
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\CShop.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\CShop.pdb
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Antlr3.Runtime.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Dapper.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\EntityFramework.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\EntityFramework.SqlServer.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Google.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Web.Infrastructure.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Newtonsoft.Json.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Owin.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Helpers.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Mvc.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Optimization.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Razor.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.WebPages.Deployment.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.WebPages.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.WebPages.Razor.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\WebGrease.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Dapper.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Helpers.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Mvc.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Optimization.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.Razor.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.WebPages.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.WebPages.Deployment.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\System.Web.WebPages.Razor.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Antlr3.Runtime.pdb
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Newtonsoft.Json.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\EntityFramework.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\EntityFramework.SqlServer.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Google.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\obj\Debug\CShop.csprojResolveAssemblyReference.cache
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\obj\Debug\CShop.Migrations.Cart.resources
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\obj\Debug\CShop.csproj.GenerateResource.Cache
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\obj\Debug\CShop.dll
+F:\btech sem5\wddn\project wddn\backup\backup1\CShop\CShop\obj\Debug\CShop.pdb
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\csc.exe
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\System.Collections.Immutable.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\System.Reflection.Metadata.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\vbc.exe
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\VBCSCompiler.exe
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\roslyn\VBCSCompiler.exe.config
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\CShop.dll.config
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\CShop.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\CShop.pdb
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Antlr3.Runtime.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Dapper.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\EntityFramework.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\EntityFramework.SqlServer.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Google.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Web.Infrastructure.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Newtonsoft.Json.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Owin.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Helpers.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Mvc.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Optimization.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Razor.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.WebPages.Deployment.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.WebPages.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.WebPages.Razor.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\WebGrease.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Dapper.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Helpers.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Mvc.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Optimization.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.Razor.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.WebPages.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.WebPages.Deployment.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\System.Web.WebPages.Razor.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Antlr3.Runtime.pdb
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Newtonsoft.Json.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\EntityFramework.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\EntityFramework.SqlServer.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.AspNet.Identity.Core.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Facebook.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Cookies.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.OAuth.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Google.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.Twitter.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\obj\Debug\CShop.csprojResolveAssemblyReference.cache
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\obj\Debug\CShop.Migrations.Cart.resources
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\obj\Debug\CShop.csproj.GenerateResource.Cache
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\obj\Debug\CShop.dll
+D:\btech\btech sem5\wddn\project wddn\backup\final\CShop\CShop\obj\Debug\CShop.pdb

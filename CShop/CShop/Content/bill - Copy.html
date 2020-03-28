@@ -1,0 +1,165 @@
+<?php session_start(); include("conn.php");?>
+<?php if (!isset($_SESSION['uid'])) {
+  header("location:index.php");
+} else {
+  
+?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type = "text/javascript">
+
+window.onload = function () {
+        document.onkeydown = function (e) {
+            return (e.which || e.keyCode) != 116;
+        };
+    }
+</script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Customize Shop</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+	  <!-- CUSTOM STYLE  -->
+    <link href="assets/css/custom-style.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+ <div class="container">
+     
+      <div class="row pad-top-botm ">
+         <div class="col-lg-6 col-md-6 col-sm-6 ">
+            <img src="image1/final.png" style="padding-bottom:20px;" /> 
+         </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            
+               <strong> Customize Shopping LLC.</strong>
+              <br />
+                  <i>Address :</i> G P JAMNAGAR
+              <br />
+                  Valsura Road 
+              <br />
+             Jamnagar,Gujarat
+         </div>
+     </div>
+     <div  class="row text-center contact-info">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+             <hr />
+             <span>
+                 <strong>Email : </strong>customizeshop@gmail.com
+             </span>
+             <span>
+                 <strong>Call : </strong>+91-990-917-1020
+             </span>
+              <span>
+                 <strong>Fax : </strong>  +91-972-397-3716
+             </span>
+             <hr />
+         </div>
+     </div>
+     <?php
+     $uid=$_SESSION['uid'];
+     $sid=session_id();
+     $res=mysql_query("select sum(net) from buy where uid='$uid' and sessionid='$sid'");
+     $total=mysql_fetch_row($res)[0];
+     $total1=$total;
+     if(isset($_SESSION['promo']))
+     {
+      $_SESSION['total']=$total-($total*20)/100;
+    mysql_query("update login set promocode='',usep=1 where uid='$uid'");
+    unset($_SESSION['promo']);
+     }else{ $_SESSION['total']=$total;}
+     $result=mysql_query("select * from buy where uid='$uid' and sessionid='$sid'");
+     $fetch=mysql_fetch_array($result);
+          $result1=mysql_query("select * from buy where uid='$uid' and sessionid='$sid'");
+
+     $n=mysql_num_rows($result1);
+     ?>
+     <div  class="row pad-top-botm client-info">
+         <div class="col-lg-6 col-md-6 col-sm-6">
+         <h4>  <strong>Client Information</strong></h4>
+           <strong><?php echo $fetch[3]."&nbsp&nbsp&nbsp".$fetch[4];?></strong>
+             <br />
+                  <b>Address :</b><?php echo $fetch[6];?>
+             <br />
+             <b>Call :</b><?php echo $fetch[7];?>
+              <br />
+             <b>E-mail :</b><?php echo $fetch[2];?>
+         </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            
+               <h4>  <strong>Payment Details </strong></h4>
+            <b>Bill Amount : <?php echo $_SESSION['total']; ?> </b>
+              <br />
+               Bill Date : <?php echo $fetch['date'];?> 
+              <br />
+               <b>Payment Type :Case on delievery</b>
+                             <br />
+               Purchase Date : <?php echo $fetch[12];?>
+         </div>
+     </div>
+     <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+           <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>S. No.</th>
+                                    <th>Product Name</th>
+                                    <th>Quantity.</th>
+                                    <th>Unit Price</th>
+                                     <th>Sub Total</th>
+                                </tr>
+                            </thead>
+                            <tbody><?php  for($i=1;$i<=$n;$i++){
+                              $row=mysql_fetch_row($result1);
+                             ?>
+                                <tr>
+                                    <td><?php echo $i; ?></td>
+                                    <td><?php echo $row[8];?>
+                                    <td><?php echo $row[11];?></td>
+                                    <td><?php echo $row[9];?></td>
+                                    <td><?php echo $row[10];?></td>
+                                </tr><?php  } ?>
+                            </tbody>
+                        </table>
+               </div>
+             <hr />
+             <div class="ttl-amts">
+               <h5>  Total Amount :<?php echo $total1;?> </h5>
+             </div>
+             <hr />
+            
+              <div class="ttl-amts"> 
+                  <h4> <strong>Bill Amount<?php if($_SESSION['total'] != $total1){?>(After 20% Discount) <?php }echo ": ".$_SESSION['total'];?></strong> </h4>
+             </div>
+         </div>
+     </div>
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <strong> Important: </strong>
+             <ol>
+                  <li>
+                    This is an electronic generated invoice so doesn't require any signature.
+
+                 </li>
+                 <li>
+                     Please read all terms and polices on  www.yourdomaon.com for returns, replacement and other issues.
+
+                 </li>
+             </ol>
+             </div>
+         </div>
+ </div>
+
+</body>
+</html>
+<?php } ?>
